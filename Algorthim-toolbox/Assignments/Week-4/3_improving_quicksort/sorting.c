@@ -52,7 +52,6 @@ void randomized_quick_sort(int a[] , int l, int r) {
   int k = l + rand() % (r - l + 1);
   swap(&a[l],&a[k]);
   partition2(a, l, r);
-
   randomized_quick_sort(a, l, m1 - 1);
   randomized_quick_sort(a, m2 + 1, r);
 }
